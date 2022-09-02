@@ -16,24 +16,24 @@
  * }
  */
 class Solution {
-    // public ListNode deleteDuplicates(ListNode head) {
+    public ListNode deleteDuplicates(ListNode head) {
         
-    //     /*
-    //      * 因为链表是有序的，所以我们只需要判断相邻的是不是一样，一样就删除 (next=next.next)
-    //      */
-    //     if (null == head){
-    //         return head;
-    //     }
-    //     ListNode currentNode=head;
-    //     while(null != currentNode.next){
-    //         if (currentNode.val == currentNode.next.val){
-    //             currentNode.next=currentNode.next.next;
-    //         }else{
-    //             currentNode = currentNode.next;
-    //         }
-    //     }
-    //     return head;
-    // }
+        /*
+         * 因为链表是有序的，所以我们只需要判断相邻的是不是一样，一样就删除 (next=next.next)
+         */
+        if (null == head){
+            return head;
+        }
+        ListNode currentNode=head;
+        while(null != currentNode.next){
+            if (currentNode.val == currentNode.next.val){
+                currentNode.next=currentNode.next.next;
+            }else{
+                currentNode = currentNode.next;
+            }
+        }
+        return head;
+    }
     
     public ListNode deleteDuplicates(ListNode head) {
     /*
