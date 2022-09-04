@@ -2,6 +2,7 @@ package java语法基础;
 
 public class demo6 {
   public class ListNode {
+    
     int val;
     ListNode next;
     ListNode(int x) { val = x;}

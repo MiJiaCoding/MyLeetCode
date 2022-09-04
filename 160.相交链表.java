@@ -18,6 +18,7 @@ import java.util.List;
  *     }
  * }
  */
+
 public class Solution {
     // 暴力
     // public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
