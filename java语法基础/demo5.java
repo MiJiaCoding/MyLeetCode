@@ -22,21 +22,21 @@ public class demo5 {
     //     scan.close();
     // }
 
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int t = scan.nextInt();
-        int n ;
-        boolean hasfind = false;
-        for(int j=0; j<t; j++) {
-            n=scan.nextInt();
-            hasfind = false;
-            for (int i =1;i<=n;i++){
-                if (n % i==0 && i*i > n && !hasfind){
-                    System.out.println(i);
-                    hasfind = true;
-                } 
-            }
-        }
-        scan.close();
-    }
+    // public static void main(String[] args) {
+    //     Scanner scan = new Scanner(System.in);
+    //     int t = scan.nextInt();
+    //     int n ;
+    //     boolean hasfind = false;
+    //     for(int j=0; j<t; j++) {
+    //         n=scan.nextInt();
+    //         hasfind = false;
+    //         for (int i =1;i<=n;i++){
+    //             if (n % i==0 && i*i > n && !hasfind){
+    //                 System.out.println(i);
+    //                 hasfind = true;
+    //             } 
+    //         }
+    //     }
+    //     scan.close();
+    // }
 }
