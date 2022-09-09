@@ -32,20 +32,20 @@ class Solution {
     /*
      * 递归 时间O(n) 空间 O(1)
     */
-    // public List<Integer> inorderTraversal(TreeNode root) {
-    //     List<Integer> res = new ArrayList<>();
-    //     accessTree(root, res);
-    //     return res;
-    // }
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        accessTree(root, res);
+        return res;
+    }
 
-    // public void accessTree(TreeNode root,List<Integer>res){
-    //     if (root==null){
-    //         return ;
-    //     }
-    //     accessTree(root.left,res);
-    //     res.add(root.val);
-    //     accessTree(root.right,res);
-    // }
+    public void accessTree(TreeNode root,List<Integer>res){
+        if (root==null){
+            return ;
+        }
+        accessTree(root.left,res);
+        res.add(root.val);
+        accessTree(root.right,res);
+    }
     
 
     /*
