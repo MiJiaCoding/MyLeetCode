@@ -6,6 +6,9 @@
 
 // @lc code=start
 class Solution {
+    /*
+     * 正序遍历26个字母 然后再逆序遍历一边26个字母
+     */
     public String sortString(String s) {
         int [] cnt=new int [26];
         for (int i=0;i<s.length();i++){
