@@ -60,9 +60,12 @@ class Solution {
             }
             depth++;
         }
+        
+
         return depth;
+
     }
-    
+
 
 }
 // @lc code=end
