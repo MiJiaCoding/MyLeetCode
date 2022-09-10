@@ -8,6 +8,7 @@
 class Solution {
     /*
      * 正序遍历26个字母 然后再逆序遍历一边26个字母
+     * 直到s字符串为空
      */
     public String sortString(String s) {
         int [] cnt=new int [26];
