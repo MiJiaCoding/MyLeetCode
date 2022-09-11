@@ -58,8 +58,9 @@ class Solution {
 
                 size--;
             }
-            depth++;
             
+            depth++;
+
         }
         
 
