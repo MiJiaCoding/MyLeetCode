@@ -58,11 +58,8 @@ class Solution {
 
                 size--;
             }
-            
             depth++;
-
         }
-        
 
         return depth;
 
