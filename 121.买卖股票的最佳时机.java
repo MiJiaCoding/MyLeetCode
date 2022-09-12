@@ -6,6 +6,7 @@
 
 // @lc code=start
 class Solution {
+    // nb
     // public int maxProfit(int[] prices) {
     //     if (prices.length<2) return 0;
     //     int res =0;
