@@ -6,6 +6,7 @@
 
 // @lc code=start
 class Solution {
+    // 不能这样吧
     public String longestPalindrome(String s) {
         int len = s.length();
         boolean [][] dp =new boolean[len][len];
