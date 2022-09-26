@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="GBK"?>
+<?xml-stylesheet type="text/css" href="sx1.css"?>
+<root>
+<addresslist>
+	<linkman>
+		<empno>2000123123</empno>
+		<ename>里奈</ename>
+		<job>保洁员</job>
+		<hiredate>1998.06.05</hiredate>
+		<sal>3000.0</sal>
+		<comm>300.0</comm>
+		<empno>1239812300</empno>
+		<ename>王刚</ename>
+		<job>工程师</job>
+		<hiredate>1998.04.24</hiredate>
+		<sal>20000.0</sal>
+		<comm>250.0</comm>
+		<empno>1911640110</empno>
+		<ename>宏利</ename>
+		<job>架构开发</job>
+		<hiredate>1999.03.08</hiredate>
+		<sal>10000.0</sal>
+		<comm>1000.0</comm>
+	</linkman>
+</addresslist>
+</root>

@@ -1,0 +1,39 @@
+empno
+{	display:block;
+	color: black;
+	font-size: 18pt;
+	font-style:italic;	}
+ename
+{
+	display: block;
+	color:blue;
+	font-size:22pt;
+	font-weight:bold;
+}
+job
+{
+	display:block;
+	color: green;
+	font-size: 18pt;
+	font-style:italic;
+}
+hiredate
+{
+	display:block;
+	color: black;
+	font-size: 15pt;
+}
+sal
+{
+	display:block;
+	color: purple;
+	font-size: 18pt;
+	font-style:italic;
+}
+comm
+{
+	display:block;
+	color: purple;
+	font-size: 18pt;
+	font-style:italic;
+}
