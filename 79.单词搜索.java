@@ -25,7 +25,7 @@ class Solution {
         // 没找到,终止循环
         if (board[i][j]!=word.charAt(idx)) return false;
         // 继续搜索
-        int temp=board[i][j];
+        char temp=board[i][j];
         board[i][j]='-';
         if (!crossBorder(i-1, j, r, c)&&dfs(board,word,i-1,j,idx+1,r,c)) return true;
         if (!crossBorder(i, j-1, r, c)&&dfs(board,word,i,j-1,idx+1,r,c)) return true;
