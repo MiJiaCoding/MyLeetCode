@@ -26,7 +26,6 @@ import javax.swing.tree.TreeNode;
  * }
  */
 class Solution {
-
     /*
      *  前序遍历改变 根右左 然后用一个depth记录深度，每一个深度值保留一个！
      */
