@@ -21,29 +21,41 @@
  * }
  */
 class Solution {
-    int res = 0;
-    public int pathSum(TreeNode root, int targetSum) {
-        if (root!=null){
-            dfs(root,targetSum);
-            pathSum(root.left,targetSum);
-            pathSum(root.right,targetSum);
-            // 错误
-            // dfs(root.left,targetSum);
-            // dfs(root.right,targetSum);
-        }
+    // int res = 0;
+    // public int pathSum(TreeNode root, int targetSum) {
+    //     if (root!=null){
+    //         dfs(root,targetSum);
+    //         pathSum(root.left,targetSum);
+    //         pathSum(root.right,targetSum);
+    //         // 错误
+    //         // dfs(root.left,targetSum);
+    //         // dfs(root.right,targetSum);
+    //     }
     
-        return res;
-    }
-    private void dfs(TreeNode root, long targetSum){
-        if (root == null) return ;
-        if (root.val==targetSum){
-            res++;
-            // 不能加return  因为 此节点的子树可能还有满足条件的路劲
+    //     return res;
+    // }
+    // private void dfs(TreeNode root, long targetSum){
+    //     if (root == null) return ;
+    //     if (root.val==targetSum){
+    //         res++;
+    //         // 不能加return  因为 此节点的子树可能还有满足条件的路劲
+    //     }
+    //     dfs(root.left,targetSum-root.val);
+    //     dfs(root.right,targetSum-root.val);
+    //     return ;
+    // }
+
+    public int pathSum(TreeNode root, int targetSum) {
+        if (root==null) {
+            return 0;
         }
-        dfs(root.left,targetSum-root.val);
-        dfs(root.right,targetSum-root.val);
-        return ;
+        
+        int ret = pathSum(root, targetSum);
+        ret += pathSum(root.left, targetSum);
+        ret += pathSum(root.right, targetSum);
+        return ret;
     }
+
 }
 // @lc code=end
 
