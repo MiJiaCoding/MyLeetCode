@@ -24,6 +24,7 @@ class Solution {
     /*
      * 对于搜索二叉树来说，直接中序遍历就是从小到大排序
      */
+    
     int count=0;
     int res =-1;
     public int kthSmallest(TreeNode root, int k) {
