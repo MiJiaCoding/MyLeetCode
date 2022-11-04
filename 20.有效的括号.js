@@ -49,32 +49,7 @@
 
 
 
-//字典1
-const dict={
-    '(':')',
-    '{':'}',
-    '[':']'
-}
-var isValid = function(s){
-    if(s.length%2!==0) return false
-    const stack=[]
-    for(let i=0;i<s.length;i++){
-        if(dict[s[i]]){
-            // 如果是开头符号 入栈。
-            //定义的变量，赋值为空字符串在if中认为是假，赋值为其他的字符串，也就是是字符串中有字符就认为是真
-            stack.push(s[i])
-        }else
-            if (s[i]===dict[stack[stack.length-1]]) {
-                //如果是终止符号
-                stack.pop()
-            }else{
-                return false
-            }
-        }
-    return stack.length===0;
-}
-
-// //字典2 优化了一点 多了一个if
+// //字典1
 // const dict={
 //     '(':')',
 //     '{':'}',
@@ -88,8 +63,7 @@ var isValid = function(s){
 //             // 如果是开头符号 入栈。
 //             //定义的变量，赋值为空字符串在if中认为是假，赋值为其他的字符串，也就是是字符串中有字符就认为是真
 //             stack.push(s[i])
-//         }else{
-//             if(stack.length===0) return false
+//         }else
 //             if (s[i]===dict[stack[stack.length-1]]) {
 //                 //如果是终止符号
 //                 stack.pop()
@@ -97,9 +71,35 @@ var isValid = function(s){
 //                 return false
 //             }
 //         }
-//     }
 //     return stack.length===0;
 // }
+
+//字典2 优化了一点 多了一个if
+const dict={
+    '(':')',
+    '{':'}',
+    '[':']'
+}
+var isValid = function(s){
+    if(s.length%2!==0) return false
+    const stack=[]
+    for(let i=0;i<s.length;i++){
+        if(dict[s[i]]){
+            // 如果是开头符号 入栈。
+            //定义的变量，赋值为空字符串在if中认为是假，赋值为其他的字符串，也就是是字符串中有字符就认为是真
+            stack.push(s[i])
+        }else{
+            if(stack.length===0) return false
+            if (s[i]===dict[stack[stack.length-1]]) {
+                //如果是终止符号
+                stack.pop()
+            }else{
+                return false
+            }
+        }
+    }
+    return !stack.length;
+}
 
 
 
