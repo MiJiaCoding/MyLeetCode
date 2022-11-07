@@ -47,9 +47,6 @@ var detectCycle = function(head) {
         }
         return s
     }
-
-
-
     return null
 };
 // @lc code=end
