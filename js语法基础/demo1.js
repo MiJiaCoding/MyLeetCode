@@ -8,6 +8,7 @@ a[6](); // 10
 
 // dp1问题在一 fill里面只有一个new 引用的是同一个（同一个内存地址）
 let s="abc"
+
 let dp1=new Array(s.length).fill(new Array(s.length).fill(false));
 dp1[1][1]=true
 console.log("dp1",dp1)
