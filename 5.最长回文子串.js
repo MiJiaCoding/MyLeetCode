@@ -15,7 +15,8 @@ var longestPalindrome = function(s) {
     const n=s.length
     if (s === '' ||n < 2) return s;
     // let dp=new Array(n).fill(new Array(n).fill(false))
-    // 下面两种dp都可以 ，上面那种有问题
+    // 下面两种dp都可以 ，上面那种有问题,里面new只有都是同一个数组若修改的里面的值
+    // 其他位置会变，所以要map建立 具体可见demo1.js
     let dp = Array.from(Array(n), () => Array(n).fill(false));
     // let dp = Array(n).fill().map(()=>Array(n));
     let res=1
