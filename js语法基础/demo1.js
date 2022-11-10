@@ -28,3 +28,8 @@ console.log('dp3',dp3)
 
 // const cloneArray2 = JSON.parse(JSON.stringify(originArray))
 // console.log(originArray===cloneArray2)
+
+let arr=[1,2,3]
+let res=[]
+res.push(arr.shift())
+console.log(res)
