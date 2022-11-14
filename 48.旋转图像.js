@@ -29,9 +29,7 @@ var rotate = function(matrix) {
         begin++ // begin位置每次移动一个
         gap-=2 //gap相对俩指针的距离，每遍历完一圈，对于上下来说
                 //上指针+1，下指针-1，两指针距离 gap-2
-
     }
-
 };
 // @lc code=end
 
