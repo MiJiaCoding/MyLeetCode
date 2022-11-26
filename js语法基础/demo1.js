@@ -33,3 +33,17 @@ let arr=[1,2,3]
 let res=[]
 res.push(arr.shift())
 console.log(res)
+
+let str1="23"
+let str2="45"
+let str3="67"
+let res1 = []
+let path = []
+path.push(str1[0])
+path.push(str2[1])
+console.log(path)
+let temp=path.join("")
+console.log(temp)
+res1.push(temp)
+console.log(res1)
+// console.log(str.length)
