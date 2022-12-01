@@ -1,4 +1,4 @@
-/*
+~/*
  * @lc app=leetcode.cn id=46 lang=javascript
  *
  * [46] 全排列
