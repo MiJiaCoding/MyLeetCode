@@ -47,3 +47,11 @@ console.log(temp)
 res1.push(temp)
 console.log(res1)
 // console.log(str.length)
+
+
+var arr2 = Array.from(new Array(3),()=>new Array(2).fill(0));
+arr2[2][1]=1
+console.log("arr2:",arr2)
+var arr3 = new Array(3).fill().map(()=>new Array(2).fill(0))
+arr3[2][1]=1
+console.log("arr3:",arr3)
