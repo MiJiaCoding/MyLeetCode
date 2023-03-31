@@ -9,8 +9,8 @@ const Bag = (w, v, size) => {
   // 初始化 2. 对于物品0号 ，只要背包容量够 就去装
   for (let j = w[0]; j <= size; j++) dp[0][j] = v[0];
 
-  for (let i = 1; i < n; i++) {
-    for (let j = 1; j < size + 1; j++) {
+  for (let i = 1; i < n; i++) { // 遍历物品 
+    for (let j = 1; j < size + 1; j++) { // 遍历背包容量
       if (j < w[i]) dp[i][j] = dp[i - 1][j];
       else dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - w[i]] + v[i]);
     }
@@ -24,7 +24,7 @@ const Bag2 = (w, v, size) => {
   const dp = new Array(size + 1).fill(0);
   // 需要对于 j（背包容量）从后往前便利，防止重复计算同一个物品的价值
   for (let i = 0; i < n; i++) {
-    for (let j = size; j >= w[0]; j--) {
+    for (let j = size; j >= w[i]; j--) {
       dp[j] = Math.max(dp[j], dp[j - w[i]] + v[i]);
     }
   }
@@ -34,7 +34,7 @@ const Bag2 = (w, v, size) => {
 
 let w = [2, 3, 4, 5];
 let v = [3, 4, 5, 8];
-console.log("res:", Bag(w, v, 8));
-console.log("res2:", Bag(w, v, 8));
+// console.log("res:", Bag(w, v, 8));
+console.log("res2:", Bag2(w, v, 8));
 
 
