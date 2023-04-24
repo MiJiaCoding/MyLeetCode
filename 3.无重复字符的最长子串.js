@@ -44,7 +44,7 @@ var lengthOfLongestSubstring = function(s) {
             }
             set.add(s[i])
         }
-    }
+    }   
     return res
 }
 // @lc code=end
